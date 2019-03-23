@@ -41,5 +41,6 @@ class day_of_week:
         print(">>> Please provid Valid input")
 
 
-
+if __name__ == '__main__':
+    day_of_week
 

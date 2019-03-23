@@ -14,10 +14,10 @@ import re
 from Algorithm_Programs.utility import algorithm
 p1 = algorithm
 def prime():
-    inp = input("Enter number only")
+    inp = input("Take a range of 0 ­ 1000 Numbers and find the Prime numbers in that range")
     check_int = re.search(r"^[\d]+$", inp)
     if check_int:
-        inp = int(inp)
+        inp = int(inp) # convert str to int
         print(algorithm.prime_number(inp))
     else:
         print("Enter Number only not String")

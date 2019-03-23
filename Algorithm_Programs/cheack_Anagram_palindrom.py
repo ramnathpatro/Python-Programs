@@ -17,7 +17,7 @@ def prime_anagram_Palindrome_cheack():
     inp = input("Enter number only")
     check_int = re.search(r"^[\d]+$", inp)
     if check_int:
-        inp = int(inp)
+        inp = int(inp) # convert str to int
         print("prime_anagram number is:-",ref.cheack_prime_Anagram(inp))
         print("+++++++++++++++++++++++++++++++++")
         print("prime_Palindrome is :-",ref.prime_Palindrome(inp))

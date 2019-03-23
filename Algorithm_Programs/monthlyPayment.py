@@ -1,3 +1,17 @@
+
+"""
+******************************************************************************
+* Purpose:  calculate the monthly_payment
+* @author:  Ramnath Patro
+* @version: 1.0
+* @since:   14-3-2019
+*
+******************************************************************************
+"""
+
+
+
+
 import re
 from Algorithm_Programs.utility import algorithm
 
@@ -8,7 +22,7 @@ def monthly_payment():
     Y1 = input("Enter the Year")
     R1 = input("Enter the interest")
     cheack_P = re.search(r"^[\d]+$", P1)
-    cheack_Y = re.search(r"^[\d]{1}$", Y1)
+    cheack_Y = re.search(r"^[\d]{2}|[\d]{1}$", Y1)
     cheack_R = re.search(r"^[\d]{2}|[\d]{1}$", R1)
 
     if cheack_P and cheack_R and cheack_Y:

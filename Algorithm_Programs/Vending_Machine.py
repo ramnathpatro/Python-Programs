@@ -24,8 +24,8 @@ def vending_machine():
 
     cheack = re.search(r"^[\d]+$", inps)
     if cheack:
-        inps = int(inps)
-        ref.countCurrency(inps) # cal the notes calling function and pass theargument
+        inps = int(inps) # convert str to int
+        ref.countCurrency(inps) # cal the notes calling function and pass the argument
     else:
         print("Enter proper amount")
 

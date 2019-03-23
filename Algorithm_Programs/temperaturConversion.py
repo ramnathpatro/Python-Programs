@@ -1,6 +1,14 @@
 
 
-
+"""
+******************************************************************************
+* Purpose:  Fahrenheit_to_Celsius and Celsius_to_Fahrenheit
+* @author:  Ramnath Patro
+* @version: 1.0
+* @since:   13-3-2019
+*
+******************************************************************************
+"""
 
 
 import re
@@ -19,7 +27,7 @@ def temp_Conversion():
         cheack = re.search(r"^[\d]+$", option)
 
         if cheack:
-            option = int(option)
+            option = int(option) # convert str to int
             if option == 1:
                 print(ref.Fahrenheit_to_Celsius())
 

@@ -36,9 +36,9 @@ def search_sort():
             total_ele = input("how much element you have to input")
             cheack = re.search(r"^[\d]+$", total_ele)  # cheack it is int or not
             if cheack:
-                total_ele = int(total_ele)
-                ele = ref.inser_int(total_ele)
-                sort_list = ref.bubble_sort(ele)
+                total_ele = int(total_ele) # convert str to int
+                ele = ref.inser_int(total_ele) # convert str to int
+                sort_list = ref.bubble_sort(ele) # convert str to int
                 sear = int(input("search the integer"))
                 if ref.binary_search(sort_list, sear):
                     print(ref.binary_search(sort_list, sear))
